@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>在线考试</title>
+
+    <link rel="stylesheet" href="../static/css/examination.css">
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+
+</head>
+<body>
+    <div class="header_bar">
+        <div class="header_information">
+            <img src="../static/images/header.png" width="100%">
+        </div>
+    </div>
+    
+    <div class="wrap_content">
+        <div class="side_bar">
+            <button id="select_bar1">
+                <a><b>单选题</b></a>
+                <img src="../static/images/before_select.png" alt="">
+            </button>
+            <div id="select_content1" style="display: none;">
+                <button class="select_single_number" value="1">1</button>
+                <button class="select_single_number" value="2">2</button>
+                <button class="select_single_number" value="3">3</button>
+                <button class="select_single_number" value="4">4</button>
+                <button class="select_single_number" value="5">5</button>
+                <button class="select_single_number" value="6">6</button>
+                <button class="select_single_number" value="7">7</button>
+                <button class="select_single_number" value="8">8</button>
+                <button class="select_single_number" value="9">9</button>
+                <button class="select_single_number" value="10">10</button>
+                <button class="select_single_number" value="11">11</button>
+                <button class="select_single_number" value="12">12</button>
+                <button class="select_single_number" value="13">13</button>
+                <button class="select_single_number" value="14">14</button>
+                <button class="select_single_number" value="15">15</button>
+                <button class="select_single_number" value="16">16</button>
+                <button class="select_single_number" value="17">17</button>
+                <button class="select_single_number" value="18">18</button>
+                <button class="select_single_number" value="19">19</button>
+                <button class="select_single_number" value="20">20</button>
+                <button class="select_single_number" value="21">21</button>
+                <button class="select_single_number" value="21">22</button>
+                <button class="select_single_number" value="23">23</button>
+                <button class="select_single_number" value="24">24</button>
+                <button class="select_single_number" value="25">25</button>
+                <button class="select_single_number" value="26">26</button>
+                <button class="select_single_number" value="27">27</button>
+                <button class="select_single_number" value="28">28</button>
+                <button class="select_single_number" value="29">29</button>
+                <button class="select_single_number" value="30">30</button>
+                <button class="select_single_number" value="31">31</button>
+                <button class="select_single_number" value="32">32</button>
+                <button class="select_single_number" value="33">33</button>
+                <button class="select_single_number" value="34">34</button>
+                <button class="select_single_number" value="35">35</button>
+                <button class="select_single_number" value="36">36</button>
+                <button class="select_single_number" value="37">37</button>
+                <button class="select_single_number" value="38">38</button>
+                <button class="select_single_number" value="39">39</button>
+                <button class="select_single_number" value="40">40</button>
+                <button class="select_single_number" value="41">41</button>
+                <button class="select_single_number" value="42">42</button>
+                <button class="select_single_number" value="43">43</button>
+                <button class="select_single_number" value="44">44</button>
+                <button class="select_single_number" value="45">45</button>
+                <button class="select_single_number" value="46">46</button>
+                <button class="select_single_number" value="47">47</button>
+                <button class="select_single_number" value="48">48</button>
+                <button class="select_single_number" value="49">49</button>
+                <button class="select_single_number" value="50">50</button>
+                <button class="select_single_number" value="51">51</button>
+                <button class="select_single_number" value="52">52</button>
+                <button class="select_single_number" value="53">53</button>
+                <button class="select_single_number" value="54">54</button>
+                <button class="select_single_number" value="55">55</button>
+                <button class="select_single_number" value="56">56</button>
+                <button class="select_single_number" value="57">57</button>
+                <button class="select_single_number" value="58">58</button>
+                <button class="select_single_number" value="59">59</button>
+                <button class="select_single_number" value="60">60</button>
+            </div>
+
+            <button id="select_bar2">
+                <a><b>多选题</b></a>
+                <img src="../static/images/before_select.png" alt="">
+            </button>
+            <div id="select_content2" style="display: none;">
+                <button class="select_multiple_number" value="61">61</button>
+                <button class="select_multiple_number" value="62">62</button>
+                <button class="select_multiple_number" value="63">63</button>
+                <button class="select_multiple_number" value="64">64</button>
+                <button class="select_multiple_number" value="65">65</button>
+                <button class="select_multiple_number" value="66">66</button>
+                <button class="select_multiple_number" value="67">67</button>
+                <button class="select_multiple_number" value="68">68</button>
+                <button class="select_multiple_number" value="69">69</button>
+                <button class="select_multiple_number" value="70">70</button>
+                <button class="select_multiple_number" value="71">71</button>
+                <button class="select_multiple_number" value="72">72</button>
+                <button class="select_multiple_number" value="73">73</button>
+                <button class="select_multiple_number" value="74">74</button>
+                <button class="select_multiple_number" value="75">75</button>
+                <button class="select_multiple_number" value="76">76</button>
+                <button class="select_multiple_number" value="77">77</button>
+                <button class="select_multiple_number" value="78">78</button>
+                <button class="select_multiple_number" value="79">79</button>
+                <button class="select_multiple_number" value="80">80</button>
+            </div>
+
+            <button id="select_bar3">
+                <a><b>判断题</b></a>
+                <img src="../static/images/before_select.png" alt="">
+            </button>
+            <div id="select_content3" style="display: none;">
+                <button class="select_judge_number" value="81">81</button>
+                <button class="select_judge_number" value="82">82</button>
+                <button class="select_judge_number" value="83">83</button>
+                <button class="select_judge_number" value="84">84</button>
+                <button class="select_judge_number" value="85">85</button>
+                <button class="select_judge_number" value="86">86</button>
+                <button class="select_judge_number" value="87">87</button>
+                <button class="select_judge_number" value="88">88</button>
+                <button class="select_judge_number" value="89">89</button>
+                <button class="select_judge_number" value="90">90</button>
+                <button class="select_judge_number" value="91">91</button>
+                <button class="select_judge_number" value="92">92</button>
+                <button class="select_judge_number" value="93">93</button>
+                <button class="select_judge_number" value="94">94</button>
+                <button class="select_judge_number" value="95">95</button>
+                <button class="select_judge_number" value="96">96</button>
+                <button class="select_judge_number" value="97">97</button>
+                <button class="select_judge_number" value="98">98</button>
+                <button class="select_judge_number" value="99">99</button>
+                <button class="select_judge_number" value="100">100</button>
+            </div>
+
+            <button id="btn_submit" type="submit">交卷</button>
+        </div>
+
+        <hr>
+
+        <div class="main_bar">
+            <div class="information_bar">
+                <a class="user_name1">用户名</a>
+                <b class="user_name2">htx_13994423071</b>
+                <a class="remaining_time1">剩余时间</a>
+                <b id="remaining_minute">99</b><b class="remaining_sign">:</b><b id="remaining_second">59</b>
+                <a class="progress1">已完成</a>
+                <a class="progress2">0%</a>
+                <progress id='progress' value="0" max="100"></progress>
+            </div>
+
+            <div class="question_content">
+                <p id="question_stem"></p>
+            </div>
+            <div class="question_option">
+                <button id="select_A">A</button>
+                <a id="optionA_content"></a>
+                <button id="select_B">B</button>
+                <a id="optionB_content"></a>
+                <button id="select_C" style="display: none;">C</button>
+                <a id="optionC_content"></a>
+                <button id="select_D" style="display: none;">D</button>
+                <a id="optionD_content"></a>
+            </div>
+            
+            <button id="up_btn">上一题</button>
+            <button id="down_btn">下一题</button>
+        </div>
+    </div>
+    <script src="../src/page/examination.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+*{
+    margin:0;
+    padding: 0;
+}
+/*头部栏*/
+.header_bar{
+    font-size: 0px;
+    width:100%;
+}
+.header_information{
+    float:left;
+    width:100%;
+}
+.header_navigation{
+    width: 100%;
+    overflow: hidden;
+}
+/*导航栏*/
+.tab{
+    width: 800px;
+    height: 50px;
+    margin-left: 5%;
+}
+.tab ul li {
+    width: 150px;
+    height:30px;
+    float: left;
+    list-style: none;
+    margin-left: 5px;
+}
+.tab ul li a{
+    width: 150px;
+    height:30px;
+    text-align: center;
+    display: block;
+    line-height: 25px;
+    text-decoration: none;
+    color: white;
+    border-bottom-left-radius:8px;
+    border-bottom-right-radius:8px;
+}
+.tab ul li a:hover{
+    color: #ffffff;
+    background-color: #0582CB;
+}
+.exerciseTopic{
+    background-color: #81C0E5;
+}
+.examinationOnline{
+    background-color: #81C0E5;
+}
+.personalInformation{
+    background-color: #0582CB;
+}
+/*头部内容*/
+.up_content{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+}
+.up_content h2{
+    color: #0582CB;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>题目练习</title>
+
+    <link rel="stylesheet" href="../static/css/exercise.css">
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+
+</head>
+<body class="body">
+    <div class="header_bar">
+        <div class="header_information">
+            <img src="../static/images/header.png" width="100%">
+        </div>
+    </div>
+
+    <div class="examination_Online">
+        <!-- 此处写在线考试页面 -->
+        <div class="left_bar">
+            <a><img src="../static/images/return.svg" alt=""></a>
+            <button id="up_btn">上一题</button>
+        </div>
+        <div class="main_bar">
+            <div class="information_bar">
+                <a class="progress1">已完成</a>
+                <a class="progress2"></a>
+                <progress id='progress' value="0" max="100"></progress>
+                <div class="right_information">
+                    <button id="exit_btn" onclick="exitClick()">[退出题目练习]</button>
+                </div>
+            </div>
+
+            <div class="question_content">
+                <p id="question_stem"></p>
+            </div>
+            <div class="question_option">
+                <button id="select_A">A</button>
+                <a id="optionA_content"></a>
+                <button id="select_B">B</button>
+                <a id="optionB_content"></a>
+                <button id="select_C" style="display: none;">C</button>
+                <a id="optionC_content"></a>
+                <button id="select_D" style="display: none;">D</button>
+                <a id="optionD_content"></a>
+            </div>
+            
+            <div class="submit">
+                <button id="submit_btn">提交</button>
+            </div>
+
+            <hr>
+
+            <div>
+                <a class="correct">正确答案：</a>
+                <a id="correct_option"></a>
+            </div>
+            <div>
+                <a class="correct">解析：</a>
+                <a id="answer_analysis"></a>
+            </div>
+        </div>
+        <div class="right_bar">
+             <button id="down_btn">下一题</button>
+             <a><img src="../static/images/right_return.svg" alt=""></a>
+        </div>
+       
+    </div>
+        
+    
+    
+    <script src="../src/page/exercise.js"></script>
+</body>
+</html>

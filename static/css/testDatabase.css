@@ -1,0 +1,143 @@
+.TestManage {
+  margin-left: 20px;
+  margin-right: 30px;
+}
+.changeTest {
+  display: flex;
+}
+.spanline button {
+  width: 120px;
+  height: 22px;
+  border: 3px solid #0582cb;
+  border-bottom: 0px solid #0582cb;
+  opacity: 1;
+  border-radius: 8px 8px 0px 0px;
+  font-family: PingFang SC;
+  font-weight: 400;
+  line-height: 21px;
+  color: #0582cb;
+  -webkit-text-stroke: 1 #0582cb;
+  opacity: 1;
+}
+.clickTitle {
+  background: #ffffff;
+}
+.unClickTitle {
+  background: #81c0e5;
+}
+
+.spanline {
+  position: relative;
+  left: 20px;
+  top: -9px;
+  width: 1140px;
+  height: 22px;
+  border-bottom: 5px solid #0682cb;
+  opacity: 1;
+}
+.textIndex_search {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 8px;
+}
+.textIndex_search input {
+  line-height: 20px;
+  width: 270px;
+  height: 24px;
+  background: rgba(255, 255, 255, 0.39);
+  border: 1px solid #707070;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.16);
+  border-radius: 6px;
+}
+.textIndex_search button {
+  width: 90px;
+  height: 24px;
+  background: #0582cb;
+  border: 0px;
+  color: white;
+  border-radius: 4px;
+  margin-left: 5px;
+}
+.testList {
+  position: absolute;
+  left: 50%;
+  top: 63%;
+  transform: translate(-50%, -50%);
+}
+table {
+  width: 1140px;
+  text-align: center;
+  line-height: 30px;
+  padding: 0px;
+  margin: 0px;
+  font-family: PingFang SC;
+  table-layout: fixed;
+}
+thead th {
+  position: relative;
+  border-top: 2px solid #cbcbcb;
+  border-bottom: 2px solid #cbcbcb;
+}
+tbody td {
+  color: #707070;
+  border-bottom: 2px solid #cbcbcb;
+}
+.tdQuestion {
+  width: 10em; /*保证文字不会被半汉字截断,显示10个文字*/
+  text-indent: 2em;
+  overflow: hidden; /*超出长度的文字隐藏*/
+
+  text-overflow: ellipsis; /*文字隐藏以后添加省略号*/
+  white-space: nowrap; /*强制不换行*/
+}
+.questionTitle_content {
+  background: #ebebeb;
+  width: 60%;
+}
+.questionTitle_choice,
+.questionTitle_answer {
+  background: #ebebeb;
+  width: 12%;
+}
+
+.questionTitle_do {
+  background: #ebebeb;
+  width: 16%;
+}
+.btnModify {
+  font-family: PingFang SC;
+  font-weight: 700;
+  color: #18bf8e;
+  border: 0px;
+  background-color: transparent;
+}
+.btnDelete {
+  font-family: PingFang SC;
+  font-weight: 700;
+  color: #ff0000;
+  border: 0px;
+  background-color: transparent;
+}
+.btnLook {
+  color: #0582cb;
+  font-family: PingFang SC;
+  border: 0px;
+  background-color: transparent;
+  font-size: 16px;
+}
+
+.testClassIndex {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.pagination {
+  position: absolute;
+  left: 50%;
+  top: 93%;
+  transform: translate(-50%, -50%);
+}

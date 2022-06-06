@@ -1,0 +1,235 @@
+*{
+    margin:0;
+    padding: 0;
+}
+/*头部栏*/
+.header_bar{
+    font-size: 0px;
+    width:100%;
+}
+.header_information{
+    float:left;
+    width:100%;
+}
+.header_navigation{
+    width: 100%;
+    overflow: hidden;
+}
+/*页面布局*/
+.wrap_content{
+    width:98%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+}
+/*侧边栏*/
+.side_bar{
+    width: 300px;
+    margin-top: 20px;
+}
+#select_bar1,#select_bar2,#select_bar3{
+    display:flex;
+    flex-direction: row;
+    font-size: 15px;
+    margin-top: 10px;
+    border: #fff;
+    background-color: #fff;
+}
+#select_bar1:hover,#select_bar2:hover,#select_bar3:hover{
+    cursor: pointer;
+}
+#select_bar1 a,#select_bar2 a,#select_bar3 a{
+    color: #0582CB;
+    text-align: center;
+    margin-left: 10px;
+}
+#select_bar1 img,#select_bar2 img,#select_bar3 img{
+    width: 25.6px;
+    height:15.2px;
+    margin-left: 180px;
+    margin-top: 5px;
+} 
+#select_content1,#select_content2,#select_content3{
+    margin-top: 10px;
+}
+.select_single_number,.select_multiple_number,.select_judge_number{
+    font-size: 10px;
+    width: 24px;
+    height:24px;
+    border-color: #B0B0B0;
+    border-radius: 5px;
+    border-width: 0.5px;
+    margin: 0.5px;
+}
+.select_single_number,.select_multiple_number,.select_judge_number:hover{
+    cursor: pointer;
+}
+#btn_submit{
+    width:80px;
+    height:30px;
+    background-color: red;
+    color: #fff;
+    border-color: #B0B0B0;
+    border-radius: 5px;
+    position:absolute;
+    top:500px;
+    left:120px;
+}
+#btn_submit:hover{
+    cursor: pointer;
+    background-color: green;
+}
+/*分隔线*/
+.wrap_content hr{
+    width: 3px;
+    height: 450px;
+    margin-top: 40px;
+    color: #999999;
+    border-radius: 3px;
+}
+/*主栏*/
+/*主栏--信息栏*/
+.main_bar{
+    width:68%;
+    margin-top: 40px;
+}
+.information_bar{
+    width: 100%;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.user_name1{
+    margin-left: 10px;
+    margin-top: 2px;
+    font-size: 5px;
+}
+.user_name2{
+    margin-left: 10px;
+    color:#0582CB;
+}
+.remaining_time1{
+    margin-left: 100px;
+    margin-top: 2px;
+    font-size: 5px;
+}
+#remaining_minute,.remaining_sign,#remaining_second{
+    margin-left: 10px;
+    color:green;
+}
+.progress1{
+    margin-left: 100px;
+    margin-top: 2px;
+    font-size: 5px;
+}
+.progress2{
+    margin-left: 10px;
+    color: #0582CB;
+}
+#progress{
+    margin-left: 3px;
+    margin-top: 1px;
+}
+
+/*主栏--题目栏*/
+.question_content{
+    width: 95%;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.question_option{
+    width: 95%;
+    margin-left: 60px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns:30px 10px auto;
+    grid-template-rows:30px 10px 30px 10px 30px 10px 30px;
+}
+#select_A{
+    grid-row-start:1;
+    grid-row-end:2;
+    grid-column-start:1;
+    grid-column-end:2;
+    background: #EFEFEF;
+    border-radius: 2px;
+    border-color: #9B9B9B;
+    border-width: 1px;
+}
+#optionA_content{
+    grid-row-start:1;
+    grid-row-end:2;
+    grid-column-start:3;
+    grid-column-end:4;
+}
+#select_B{
+    grid-row-start:3;
+    grid-row-end:4;
+    grid-column-start:1;
+    grid-column-end:2;
+    background: #EFEFEF;
+    border-radius: 2px;
+    border-color: #9B9B9B;
+    border-width: 1px;
+}
+#optionB_content{
+    grid-row-start:3;
+    grid-row-end:4;
+    grid-column-start:3;
+    grid-column-end:4;
+}
+#select_C{
+    grid-row-start:5;
+    grid-row-end:6;
+    grid-column-start:1;
+    grid-column-end:2;
+    background: #EFEFEF;
+    border-radius: 2px;
+    border-color: #9B9B9B;
+    border-width: 1px;
+}
+#optionC_content{
+    grid-row-start:5;
+    grid-row-end:6;
+    grid-column-start:3;
+    grid-column-end:4;
+}
+#select_D{
+    grid-row-start:7;
+    grid-row-end:8;
+    grid-column-start:1;
+    grid-column-end:2;
+    background: #EFEFEF;
+    border-radius: 2px;
+    border-color: #9B9B9B;
+    border-width: 1px;
+}
+#optionD_content{
+    grid-row-start:7;
+    grid-row-end:8;
+    grid-column-start:3;
+    grid-column-end:4;
+}
+
+/*主栏--按钮栏*/
+#up_btn,#down_btn{
+    width:80px;
+    height:30px;
+    background-color: #0582CB;
+    color: #fff;
+    border-color: #B0B0B0;
+    border-radius: 5px;
+}
+#up_btn{
+    position: absolute;
+    top:500px;
+    left:500px;
+}
+#down_btn{
+    position: absolute;
+    top:500px;
+    left:900px;
+}
+#up_btn:hover,#down_btn:hover{
+    cursor: pointer;
+    background-color: orange;
+}

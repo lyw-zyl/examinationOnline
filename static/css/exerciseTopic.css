@@ -1,0 +1,196 @@
+*{
+    margin:0;
+    padding: 0;
+}
+/*头部栏*/
+.header_bar{
+    font-size: 0px;
+    width:100%;
+}
+.header_information{
+    float:left;
+    width:100%;
+}
+.header_navigation{
+    width: 100%;
+    overflow: hidden;
+}
+/*导航栏*/
+.tab{
+    width: 800px;
+    height: 50px;
+    margin-left: 5%;
+}
+.tab ul li {
+    width: 150px;
+    height:30px;
+    float: left;
+    list-style: none;
+    margin-left: 5px;
+}
+.tab ul li a{
+    width: 150px;
+    height:30px;
+    text-align: center;
+    display: block;
+    line-height: 25px;
+    text-decoration: none;
+    color: white;
+    border-bottom-left-radius:8px;
+    border-bottom-right-radius:8px;
+}
+.tab ul li a:hover{
+    color: #ffffff;
+    background-color: #0582CB;
+}
+.exerciseTopic{
+    background-color: #0582CB;
+}
+.examinationOnline{
+    background-color: #81C0E5;
+}
+.personalInformation{
+    background-color: #81C0E5;
+}
+/*头部内容*/
+.up_content{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+}
+.up_content h2{
+    color: #0582CB;
+}
+.wrap_content{
+    width:98%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+}
+/*侧边栏*/
+.side_bar{
+    width: 30%;
+    margin-top: 20px;
+}
+.wrap_content hr{
+    width: 7px;
+    height: 350px;
+    margin-top: 100px;
+    background-color: #cacaca;
+    border-radius: 15px;
+}
+/*主栏*/
+.main_bar{
+    width:68%;
+    margin-top: 20px;
+}
+.information_bar{
+    width: 100%;
+    margin-left: 20px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.progress1{
+    margin-left: 40px;
+    margin-top: 2px;
+    font-size: 20px;
+    color: #0582CB;
+}
+.progress2{
+    margin-left: 10px;
+    font-size: 20px;
+    color: #0582CB;
+}
+#progress{
+    margin-left: 40px;
+    margin-top: 10px;
+    width: 250px;
+}
+.btn_goon{
+    margin-left: 10%;
+    margin-top: 80px;
+    display:inlin-block;
+    background-color: #0582CB;
+    color: #ffffff;
+    font-size: 22px;
+    text-align: center;
+    width: 250px;
+    height: 70px;
+    border-radius: 8px;
+    border-color: #ADD6EE;
+    border-width: 3px;
+}
+.btn_new{
+    margin-left: 10%;
+    margin-top: 80px;
+    display:inlin-block;
+    background-color: #fec126;
+    color: #ffffff;
+    font-size: 22px;
+    text-align: center;
+    width: 250px;
+    height: 70px;
+    border-radius: 8px;
+    border-color: #fce285;
+    border-width: 3px;
+}
+.last_inf{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.old_l1{
+    display: flex;
+    flex-direction: row;
+}
+.old_l1 hr{
+    margin: 0;
+    width: 7px;
+    height: 30px;
+    background-color: #0582CB;
+    border-radius: 15px;
+}
+.old_l11{
+    margin-left: 5px;
+    font-size: 23px;
+    color: #0582CB;
+}
+.old_l2{
+    margin-top: 15px;
+    margin-left: 5px;
+    font-size: 20px;
+    color: #0582CB;
+}
+.start_inf{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-left: 10%;
+}
+.start_inf hr{
+    margin: 0;
+    width: 7px;
+    height: 30px;
+    background-color: #fec126;
+    border-radius: 15px;
+}
+.new_l1{
+    margin-left: 5px;
+    font-size: 23px;
+    color: #fec126;
+}
+.new_l2 {
+    margin-left: 20px;
+    margin-right: 20px;
+    outline: 0;
+    background-image: none;
+    width: 150px;
+    /* height: 100%; */
+    font-size: 17px;
+    color: #fec126;
+    cursor: pointer;
+    border: 1px solid #fec126;
+    border-radius: 3px;
+}

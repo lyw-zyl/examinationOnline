@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>在线考试-考试结束</title>
+
+    <link rel="stylesheet" href="../static/css/examinationAfter.css">
+
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="header_bar">
+            <div class="header_information">
+                <img src="../static/images/header.png" width="100%">
+            </div>
+        </div>
+    
+        <div class="examination_end">
+            <h2>考试结束</h2>
+            <img src="../static/images/head_line_horizon.png" alt="" width="60px" height="5px">
+            
+            <div class="examination_result">
+
+                <a >您已成功提交试卷！考试结束，您的成绩为:</a>
+                <b id="score">96</b>
+                <a >，考试</a>
+                <b id="isAccept">通过</b>
+                
+
+            </div>
+
+            <button id="return" onclick="window.location.href ='../html/examinationOnline.html'">返回</button>
+            
+        </div>
+
+    </div>
+    
+    <script src="../src/page/examinationAfter.js"></script>
+</body>
+</html>

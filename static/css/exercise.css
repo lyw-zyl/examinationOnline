@@ -1,0 +1,250 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.body{
+    display: flex;
+    flex-direction: column;
+}
+.examination_Online{
+    display: flex;
+    flex-direction: row;
+}
+/*头部栏*/
+.header_bar{
+    width:100%;
+}
+.header_information{
+    float:left;
+    width:100%;
+}
+.right_information{
+    margin-left: 300px;
+}
+.header_navigation{
+    width: 100%;
+    overflow: hidden;
+}
+/*页面布局*/
+.wrap_content{
+    width:98%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+}
+/*左侧边栏*/
+.left_bar{
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;   /* 子元素水平居中 */
+    align-items: center; 
+    width: 100px;
+}
+/*右侧边栏*/
+.right_bar{
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;   /* 子元素水平居中 */
+    align-items: center; 
+    width: 100px;
+}
+/*分隔线*/
+.wrap_content hr{
+    width: 3px;
+    height: 450px;
+    margin-top: 40px;
+    color: #999999;
+    border-radius: 3px;
+}
+/*主栏*/
+/*主栏--信息栏*/
+.main_bar{
+    width:68%;
+    height:350px;
+    margin-top: 40px;
+}
+.main_bar hr{
+    margin-top: 20px;
+    margin-left: 40px;
+    width: 840px;
+    height: 7px;
+    border-radius: 3px;
+    background-color: #0582CB;
+}
+.information_bar{
+    width: 100%;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.user_name1{
+    margin-left: 10px;
+    margin-top: 2px;
+    font-size: 5px;
+}
+.user_name2{
+    margin-left: 10px;
+    color:#0582CB;
+}
+.progress1{
+    margin-left: 40px;
+    margin-top: 2px;
+    font-size: 18px;
+    color: #0582CB;
+}
+.progress2{
+    margin-left: 10px;
+    font-size: 18px;
+    color: #0582CB;
+}
+#progress{
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 150px;
+}
+
+/*主栏--题目栏*/
+.question_content{
+    width: 95%;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.question_option{
+    width: 95%;
+    margin-left: 60px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns:30px 10px auto;
+    grid-template-rows:30px 10px 30px 10px 30px 10px 30px;
+}
+#select_A{
+    grid-row-start:1;
+    grid-row-end:2;
+    grid-column-start:1;
+    grid-column-end:2;
+    background: #EFEFEF;
+    border-radius: 2px;
+    border-color: #9B9B9B;
+    border-width: 1px;
+}
+#optionA_content{
+    grid-row-start:1;
+    grid-row-end:2;
+    grid-column-start:3;
+    grid-column-end:4;
+}
+#select_B{
+    grid-row-start:3;
+    grid-row-end:4;
+    grid-column-start:1;
+    grid-column-end:2;
+    background: #EFEFEF;
+    border-radius: 2px;
+    border-color: #9B9B9B;
+    border-width: 1px;
+}
+#optionB_content{
+    grid-row-start:3;
+    grid-row-end:4;
+    grid-column-start:3;
+    grid-column-end:4;
+}
+#select_C{
+    grid-row-start:5;
+    grid-row-end:6;
+    grid-column-start:1;
+    grid-column-end:2;
+    background: #EFEFEF;
+    border-radius: 2px;
+    border-color: #9B9B9B;
+    border-width: 1px;
+}
+#optionC_content{
+    grid-row-start:5;
+    grid-row-end:6;
+    grid-column-start:3;
+    grid-column-end:4;
+}
+#select_D{
+    grid-row-start:7;
+    grid-row-end:8;
+    grid-column-start:1;
+    grid-column-end:2;
+    background: #EFEFEF;
+    border-radius: 2px;
+    border-color: #9B9B9B;
+    border-width: 1px;
+}
+#optionD_content{
+    grid-row-start:7;
+    grid-row-end:8;
+    grid-column-start:3;
+    grid-column-end:4;
+}
+
+/*主栏--按钮栏*/
+#up_btn,#down_btn{
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #0582CB;
+    border: 1px solid rgb(255, 255, 255);
+    outline: none;
+}
+#submit_btn{
+    width:90px;
+    height: 45px;
+    font-size: 16px;
+    background-color: #0582CB;
+    color: #ffffff;
+    border-radius: 8px;
+    border: 3px solid rgb(159, 187, 250);
+}
+/* #up_btn{
+    position: absolute;
+    top:500px;
+    left:500px;
+}
+#down_btn{
+    position: absolute;
+    top:500px;
+    left:900px;
+} */
+#up_btn:hover,#down_btn:hover{
+    cursor: pointer;
+    color: orange;
+    background-color: rgb(255, 255, 255);
+}
+.submit{
+    display: flex;
+    justify-content: right;
+}
+.correct{
+    margin-top: 10px;
+    margin-left: 50px;
+    font-size: 20px;
+    color: #0582CB;
+}
+.correct_option{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+    color: #0582CB;
+}
+.correct_option1{
+    margin-top: 10px;
+    margin-left: 5px;
+    font-size: 16px;
+    color: #000000;
+}
+#exit_btn{
+    font-size: 18px;
+    background-color: #ffffff;
+    color: #0582CB;
+    border: 1px solid rgb(255, 255, 255);
+    outline: none;
+}
+#exit_btn:hover{
+    cursor: pointer;
+    color: orange;
+    background-color: rgb(255, 255, 255);
+}

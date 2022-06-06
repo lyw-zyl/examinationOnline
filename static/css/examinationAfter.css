@@ -1,0 +1,51 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+/*头部栏*/
+.examination_end{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.examination_end h2{
+    display:inlin-block;
+    color: #0582CB;
+    margin-top: 40px;
+}
+.examination_end img{
+    display:inlin-block;
+    margin-left: 578px;
+}
+.examination_result{
+    display:inlin-block;
+    margin-top: 40px;
+    color: #333;
+}
+
+#score,#isAccept{
+    margin-top: 10px;
+    text-align: left;
+    color: green;
+}
+#return{
+    margin-top: 50px;
+    margin-left: 568px;
+    background-color: #D0D0D0;
+    color: #ffffff;
+    font-size: 13px;
+    text-align: center;
+    width: 80px;
+    height: 40px;
+    border-radius: 8px;
+    border-color: #ADD6EE;
+    border-width: 3px;
+}
+#return:hover{
+    cursor:pointer;
+}

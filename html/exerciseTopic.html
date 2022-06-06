@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>题目练习</title>
+
+    <link rel="stylesheet" href="../static/css/exerciseTopic.css">
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+    <div class="header_bar">
+        <div class="header_information">
+            <img src="../static/images/header.png" width="100%">
+        </div>
+    </div>
+    
+    <div class="header_navigation" width="50%">
+        <div class="tab"> 
+            <ul> 
+                <li><a class="exerciseTopic" href="#">题目练习</a></li>
+                <li><a class="examinationOnline" href="../html/examinationOnline.html">在线考试</a></li>
+                <li><a class="personalInformation" href="../html/personalInformation.html">个人信息</a></li>
+            </ul> 
+        </div>
+    </div>  
+
+    <div class="topic_exercise">
+        <div class="up_content">
+            <a href="#"><img src="../static/images/return.svg" alt=""></a>
+            <h2>题目练习</h2>
+        </div>
+        <!-- 此处写题目练习页面 -->
+        
+        <div class="wrap_content">
+            <div class="side_bar">
+                <button class="btn_goon" onclick="goOnClick()">继续上次练习</button>
+                <div class="information_bar">
+                    <div>
+                        <a class="progress1">已完成</a>
+                        <a class="progress2"></a>
+                    </div>
+                    <div>
+                        <progress id='progress' value="0" max="30"></progress>
+                    </div>
+                    
+                    <div class="last_inf">
+                        <div class="old_l1">
+                            <hr>
+                            <a class="old_l11"><b>当前练习题目类别</b></a>
+                        </div>
+                        <a class="old_l2"></a>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="main_bar">
+                <button class="btn_new" onclick="btnNewClick()">开始新的练习</button>
+                
+                <div class="start_inf">
+                    <hr>
+                    <a class="new_l1"><b>题目类型</b></a>
+                    <select  class="new_l2" name="type">
+                        <option value="1">伪兼职诈骗</option>
+                        <option value="2">疯狂网赚诈骗</option>
+                        <option value="3">刷单诈骗</option>
+                        <option value="4">索取物品式诈骗</option>
+                        <option value="5">酒吧托式诈骗</option>
+                        <option value="6">冒充公检法诈骗</option>
+                        <option value="7">购物理财诈骗</option>
+                        <option value="8">贷款申请费诈骗</option>
+                        <option value="9">贷款利息费诈骗</option>
+                        <option value="10">盗刷银行卡诈骗</option>
+                    </select>
+
+                    <a class="new_l1"><b>题目数量</b></a>
+                    <select  class="new_l2" name="amount">
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                        <option value="15">15</option>
+                        <option value="20">20</option>
+                        <option value="25">25</option>
+                        <option value="30">30</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="../src/page/exerciseTopic.js"></script>
+</body>
+</html>

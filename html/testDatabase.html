@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>题库管理</title>
+  <link rel="stylesheet" href="../static/css/personalInformation.css">
+  <link rel="stylesheet" href="../static/css/testDatabase.css">
+</head>
+
+<body>
+  <div class="header_bar">
+    <div class="header_information">
+      <img src="../static/images/header.png" width="100%">
+    </div>
+  </div>
+  <!-- 顶部导航栏 -->
+  <div class="header_navigation" width="50%">
+    <div class="tab">
+      <ul>
+        <li><a class="personalInformation" href="../html/testDatabase.html">题库管理</a></li>
+        <li><a class="examinationOnline" href="#">用户成绩分析</a></li>
+        <li><a class="examinationOnline" href="#">公告管理</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 题库管理 -->
+  <div class="TestManage">
+    <!-- 切换题目管理和题目类型管理 -->
+    <div class="changeTest">
+      <a href="#"><img src="../static/images/return.svg" alt=""></a>
+      <img src="../static/images/head_line1.png" alt="">
+      <div class="spanline">
+        <button id="btnTestIndex" class="clickTitle">题目管理</button>
+        <button id="btnTestClassIndex" class="unClickTitle">题目类型管理</button>
+      </div>
+    </div>
+    <!--题目管理  -->
+    <div class="testIndex">
+      <!-- 搜索框和新建题目 -->
+      <div class="textIndex_search">
+        <input id="searchInput" type="text" placeholder="请输入内容/题目类别/标题">
+        <button>查找</button>
+        <button id="btnNewTest">新建题目</button>
+      </div>
+      <!-- 题目列表 -->
+      <div class="testList">
+        <table cellspacing="0">
+          <thead>
+            <tr>
+              <th class="questionTitle_content">题目内容</th>
+              <th class="questionTitle_choice">选项</th>
+              <th class="questionTitle_answer">答案</th>
+              <th class="questionTitle_do">操作</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+      <!-- 底部页码 -->
+      <div id="testPagination" class='pagination'></div>
+    </div>
+
+
+    <!-- 题目类别管理 -->
+    <div class="testClassIndex">
+      <!-- 搜索框和新建题目类别 -->
+      <div class="textIndex_search">
+        <input id="searchClassInput" type="text" placeholder="请输入题目类别">
+        <button>查找</button>
+        <button id="btnNewTestClass">新建题目类别</button>
+      </div>
+      <!-- 题目管理类别 -->
+      <div class="testList">
+        <table cellspacing="0">
+          <thead>
+            <tr>
+              <th class="questionTitle_content">题目类别</th>
+              <th class="questionTitle_do">操作</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>刷单类诈骗</td>
+              <td>
+                <button class="btnModify">【修改】</button>
+                <button class="btnDelete">【删除】</button>
+              </td>
+            </tr>
+            <tr>
+              <td>刷单类诈骗</td>
+              <td>
+                <button class="btnModify">【修改】</button>
+                <button class="btnDelete">【删除】</button>
+              </td>
+            </tr>
+            <tr>
+              <td>刷单类诈骗</td>
+              <td>
+                <button class="btnModify">【修改】</button>
+                <button class="btnDelete">【删除】</button>
+              </td>
+            </tr>
+            <tr>
+              <td>刷单类诈骗</td>
+              <td>
+                <button class="btnModify">【修改】</button>
+                <button class="btnDelete">【删除】</button>
+              </td>
+            </tr>
+            <tr>
+              <td>刷单类诈骗</td>
+              <td>
+                <button class="btnModify">【修改】</button>
+                <button class="btnDelete">【删除】</button>
+              </td>
+            </tr>
+            <tr>
+              <td>刷单类诈骗</td>
+              <td>
+                <button class="btnModify">【修改】</button>
+                <button class="btnDelete">【删除】</button>
+              </td>
+            </tr>
+            <tr>
+              <td>刷单类诈骗</td>
+              <td>
+                <button class="btnModify">【修改】</button>
+                <button class="btnDelete">【删除】</button>
+              </td>
+            </tr>
+            <tr>
+              <td>刷单类诈骗</td>
+              <td>
+                <button class="btnModify">【修改】</button>
+                <button class="btnDelete">【删除】</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+ <!-- 底部页码 -->
+ <div id="testClassPagination" class='pagination'></div>
+  </div>
+
+
+
+
+
+  <script src="../static/bootstrap/js/jquery.min.js"></script>
+  <script src="../static/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../static/bootstrap/js/jquery.pagination.js"></script>
+  <script src="../src/page/testDatabase.js"></script>
+</body>
+
+</html>
